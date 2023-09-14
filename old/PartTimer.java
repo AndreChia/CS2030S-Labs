@@ -11,7 +11,7 @@ class PartTimer extends Employee {
 
   @Override
   public int getSalary() {
-    return (this.hourlyRate * this.clockedHour) + (2 * this.hourlyRate * this.overtimeHour);
+    return this.hourlyRate * (this.clockedHour + this.overtimeHour);
   }
   
   @Override

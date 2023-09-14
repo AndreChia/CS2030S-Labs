@@ -10,7 +10,7 @@ class Manager extends Employee {
   @Override
   public int getSalary() {
     return this.monthlySalary
-        + this.overtimeHours * this.monthlySalary / 160;
+    + this.overtimeHours * this.monthlySalary / 160;
   }
 
   @Override

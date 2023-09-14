@@ -1,6 +1,6 @@
-abstract class Employee {
+class Employee {
   private final int id;
-  private static int lastId = 0;
+  public static int lastId = 0;
 
   public Employee() {
     this.id = Employee.lastId;
@@ -11,9 +11,7 @@ abstract class Employee {
     return String.valueOf(id);
   }
 
-  public int getBonus() {
-    return 3 * this.getSalary();
-  }
-
-  public abstract int getSalary();
+  public int getSalary() {
+    return 0;
+  };
 }
